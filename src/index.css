@@ -41,6 +41,22 @@
   }
 }
 
+/* Slow, ambient pan/zoom on the hero's wave photograph — the one motion
+   set-piece the page spends its budget on. Disabled entirely for users
+   who prefer reduced motion, see the media query below. */
+@keyframes wave-drift {
+  0% {
+    transform: scale(1.06) translate3d(0, 0, 0);
+  }
+  100% {
+    transform: scale(1.14) translate3d(-1.5%, -1%, 0);
+  }
+}
+
+.animate-wave-drift {
+  animation: wave-drift 26s ease-in-out infinite alternate;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.001ms !important;

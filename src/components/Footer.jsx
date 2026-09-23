@@ -4,10 +4,19 @@ import WaveDivider from './WaveDivider'
 
 export default function Footer() {
   return (
-    <footer id="contact" className="relative bg-panel/40">
+    <footer id="contact" className="relative isolate overflow-hidden bg-panel/40">
       <WaveDivider tone="calm" />
 
-      <div className="mx-auto max-w-6xl px-6 pb-10 pt-4">
+      {/* Faint echo of the hero's wave art, bookending the page */}
+      <img
+        src="./images/kanagawa-banner-mobile.jpg"
+        alt=""
+        aria-hidden="true"
+        loading="lazy"
+        className="pointer-events-none absolute inset-x-0 bottom-0 -z-10 h-full w-full object-cover object-[75%_60%] opacity-[0.08]"
+      />
+
+      <div className="relative mx-auto max-w-6xl px-6 pb-10 pt-4">
         <div className="glass rounded-[20px] p-8 text-center shadow-glass sm:p-12">
           <h2 className="font-display text-2xl font-semibold text-smoke sm:text-3xl">
             ¿Construimos algo seguro juntos?
