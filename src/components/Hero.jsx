@@ -38,9 +38,9 @@ export default function Hero() {
       {/* Scrim: on mobile the text spans full width, so a flat wash keeps it
           legible; from sm up, a directional gradient darkens only the text
           column and leaves the wave and moon uncovered on the right. */}
-      <div className="absolute inset-0 -z-10 bg-abyss/60 sm:hidden" />
-      <div className="absolute inset-0 -z-10 hidden bg-gradient-to-r from-abyss via-abyss/55 to-transparent sm:block" />
-      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-abyss/45 via-transparent to-transparent" />
+      <div className="absolute inset-0 -z-10 bg-abyss/75 sm:hidden" />
+      <div className="absolute inset-0 -z-10 hidden bg-gradient-to-r from-abyss via-abyss/75 to-transparent sm:block" />
+      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-abyss/55 via-transparent to-transparent" />
       {/* Seam into the section below */}
       <div className="absolute inset-x-0 bottom-0 -z-10 h-32 bg-gradient-to-t from-abyss to-transparent" />
 
@@ -50,24 +50,25 @@ export default function Hero() {
         initial="hidden"
         animate="show"
       >
-        <motion.p variants={item} className="font-mono text-sm text-cyan-soft">
+        <motion.p variants={item} className="font-mono text-sm font-medium tracking-wide text-cyan-soft [text-shadow:0_1px_12px_rgba(11,19,43,0.9)]">
           {CONTACT.location}
         </motion.p>
 
         <motion.h1
           variants={item}
-          className="mt-4 max-w-3xl font-display text-4xl font-semibold leading-tight text-smoke [text-shadow:0_2px_24px_rgba(11,19,43,0.6)] sm:text-5xl lg:text-6xl"
+          className="mt-4 max-w-3xl font-display text-4xl font-semibold leading-tight text-smoke [text-shadow:0_2px_24px_rgba(11,19,43,0.85)] sm:text-5xl lg:text-6xl"
         >
           {CONTACT.name}
         </motion.h1>
 
-        <motion.p variants={item} className="mt-4 text-lg text-cyan-soft sm:text-xl">
-          Information Security Analyst · GRC &amp; AI Governance · DevSecOps
+        <motion.p variants={item} className="mt-4 text-lg font-medium text-cyan-soft [text-shadow:0_1px_16px_rgba(11,19,43,0.9)] sm:text-xl">
+          Analista de Seguridad de la Información · GRC y Gobierno de IA · DevSecOps
         </motion.p>
 
-        <motion.p variants={item} className="mt-6 max-w-xl text-base leading-relaxed text-smoke/90">
-          No solo evalúo controles; construyo soluciones seguras. Uniendo la estrategia de la
-          auditoría ISO 27001 con la ejecución técnica en Python, React y entornos cloud.
+        <motion.p variants={item} className="mt-6 max-w-xl text-base leading-relaxed text-smoke [text-shadow:0_1px_12px_rgba(11,19,43,0.9)] sm:text-lg">
+          Experiencia en el sector financiero gestionando riesgos, vulnerabilidades y cumplimiento
+          bajo ISO/IEC 27001, 27005 y NIST. Llevo esos marcos a controles concretos y los respaldo
+          con automatización en Python y desarrollo seguro de aplicaciones.
         </motion.p>
 
         <motion.div variants={item} className="mt-9 flex flex-wrap items-center gap-4">
@@ -93,7 +94,7 @@ export default function Hero() {
             target="_blank"
             rel="noreferrer noopener"
             aria-label="LinkedIn de Santiago Contreras"
-            className="text-smoke/80 transition-colors hover:text-cyan-soft"
+            className="text-smoke transition-colors hover:text-cyan-soft"
           >
             <Linkedin size={20} />
           </a>
@@ -102,7 +103,7 @@ export default function Hero() {
             target="_blank"
             rel="noreferrer noopener"
             aria-label="GitHub de Santiago Contreras"
-            className="text-smoke/80 transition-colors hover:text-cyan-soft"
+            className="text-smoke transition-colors hover:text-cyan-soft"
           >
             <Github size={20} />
           </a>
@@ -112,7 +113,7 @@ export default function Hero() {
       <a
         href="#about"
         aria-label="Ir a la sección Perfil"
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-smoke/80 transition-colors hover:text-cyan-soft"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-smoke transition-colors hover:text-cyan-soft"
       >
         <ArrowDown size={20} />
       </a>
