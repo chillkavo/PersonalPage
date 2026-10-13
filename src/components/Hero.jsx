@@ -62,13 +62,13 @@ export default function Hero() {
         </motion.h1>
 
         <motion.p variants={item} className="mt-4 text-lg font-medium text-cyan-soft [text-shadow:0_1px_16px_rgba(11,19,43,0.9)] sm:text-xl">
-          Analista de Seguridad de la Información · GRC y Gobierno de IA · DevSecOps
+          {CONTACT.headline}
         </motion.p>
 
         <motion.p variants={item} className="mt-6 max-w-xl text-base leading-relaxed text-smoke [text-shadow:0_1px_12px_rgba(11,19,43,0.9)] sm:text-lg">
-          Experiencia en el sector financiero gestionando riesgos, vulnerabilidades y cumplimiento
-          bajo ISO/IEC 27001, 27005 y NIST. Llevo esos marcos a controles concretos y los respaldo
-          con automatización en Python y desarrollo seguro de aplicaciones.
+          Experiencia en el sector bancario en auditoría de TI, gestión de vulnerabilidades y
+          cumplimiento bajo ISO/IEC 27001, 27005 y NIST. Investigo la seguridad y gobernanza de
+          agentes de IA, y respaldo los controles con automatización en Python y desarrollo seguro.
         </motion.p>
 
         <motion.div variants={item} className="mt-9 flex flex-wrap items-center gap-4">

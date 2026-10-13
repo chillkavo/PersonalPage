@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion'
-import { ShieldAlert, KeyRound } from 'lucide-react'
+import { Bot, Building, KeyRound } from 'lucide-react'
 import { PROJECTS } from '../data/profile'
 
-const ICONS = [ShieldAlert, KeyRound]
+const ICONS = [Bot, Building, KeyRound]
 
 export default function Projects() {
   return (
@@ -18,14 +18,14 @@ export default function Projects() {
           Proyectos destacados
         </motion.h2>
 
-        <div className="mt-12 grid grid-cols-1 gap-6 lg:grid-cols-5">
+        <div className="mt-12 grid grid-cols-1 gap-6 lg:grid-cols-2">
           {PROJECTS.map((project, i) => {
             const Icon = ICONS[i % ICONS.length]
             return (
               <motion.article
                 key={project.title}
                 className={`glass group relative overflow-hidden rounded-[20px] p-8 shadow-glass transition-shadow hover:shadow-glow ${
-                  project.featured ? 'lg:col-span-3' : 'lg:col-span-2'
+                  project.featured ? 'lg:col-span-2' : ''
                 }`}
                 initial={{ opacity: 0, y: 24 }}
                 whileInView={{ opacity: 1, y: 0 }}

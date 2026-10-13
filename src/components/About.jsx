@@ -1,11 +1,12 @@
 import { motion } from 'framer-motion'
-import { ShieldCheck, Code2, BadgeCheck } from 'lucide-react'
+import { ShieldCheck, Code2, BadgeCheck, FileText } from 'lucide-react'
 
 const CREDENTIALS = [
   { icon: ShieldCheck, label: 'Auditor Interno ISO/IEC 27001:2022' },
   { icon: ShieldCheck, label: 'Auditor Interno ISO/IEC 27005:2022' },
-  { icon: Code2, label: 'Python · React · Spring Boot · CI/CD' },
-  { icon: BadgeCheck, label: 'Ingeniería de Sistemas — Univ. Libre (2026)' },
+  { icon: FileText, label: 'Autor principal — Apart Research (2026)' },
+  { icon: Code2, label: 'Java/Spring Boot · Python · React · CI/CD' },
+  { icon: BadgeCheck, label: 'Ingeniería de Sistemas — Univ. Libre (8.º semestre, 2026)' },
 ]
 
 export default function About() {
@@ -24,21 +25,25 @@ export default function About() {
           </h2>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted">
             Soy estudiante de Ingeniería de Sistemas con experiencia práctica en seguridad de la
-            información, auditoría de TI y riesgo tecnológico en el sector bancario. Trabajo
-            directamente en gestión y clasificación de activos de información, gestión de
-            vulnerabilidades, evaluación de controles y cumplimiento de los lineamientos de la
-            Superintendencia Financiera de Colombia.
+            información, auditoría de TI y riesgo tecnológico en el sector bancario. Certificado
+            como auditor interno ISO/IEC 27001 e ISO/IEC 27005, he trabajado directamente en gestión
+            y clasificación de activos de información, gestión de vulnerabilidades, evaluación de
+            controles y cumplimiento de los lineamientos de la Superintendencia Financiera de
+            Colombia.
           </p>
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted">
-            En GRC documento procedimientos de auditoría interna, elaboro políticas y estándares
-            de seguridad, analizo riesgos y reporto indicadores a la alta gerencia — incluyendo
-            los lineamientos de uso seguro de IA generativa y la identificación de riesgos
-            emergentes como prompt injection, fuga de información y shadow AI.
+            En GRC documento procedimientos de auditoría interna, elaboro políticas de seguridad,
+            analizo riesgos y reporto indicadores a la alta gerencia. He participado en los
+            lineamientos de uso seguro de IA generativa e investigo la seguridad y gobernanza de
+            agentes de IA, con una publicación como autor principal junto a Apart Research sobre
+            esquemas de atestación para la contención de agentes autónomos.
           </p>
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted">
-            Ese perfil se complementa con una base sólida en ingeniería de software, lo que me
-            permite evaluar controles desde la perspectiva técnica y de negocio, y comunicar
-            hallazgos con claridad tanto a equipos técnicos como a directivos.
+            Ese perfil se complementa con una base sólida en ingeniería de software (Java/Spring
+            Boot, Python, React, bases de datos relacionales, CI/CD) y práctica en seguridad
+            ofensiva y hardening de infraestructura (Nmap, Qualys, THC Hydra), lo que me permite
+            evaluar controles desde la perspectiva técnica, ofensiva y de negocio, y comunicar
+            hallazgos con claridad a equipos técnicos y directivos.
           </p>
         </motion.div>
 

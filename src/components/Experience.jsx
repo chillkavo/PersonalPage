@@ -30,6 +30,9 @@ export default function Experience() {
               <p className="font-mono text-xs text-cyan-soft">{job.period}</p>
               <h3 className="mt-1 font-display text-xl font-semibold text-smoke">{job.role}</h3>
               <p className="text-sm text-cyan">{job.org}</p>
+              {job.summary && (
+                <p className="mt-3 text-sm italic leading-relaxed text-muted">{job.summary}</p>
+              )}
 
               <ul className="mt-4 space-y-2">
                 {job.highlights.map((h) => (

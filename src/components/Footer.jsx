@@ -22,7 +22,7 @@ export default function Footer() {
             ¿Construimos algo seguro juntos?
           </h2>
           <p className="mx-auto mt-3 max-w-md text-sm text-muted">
-            Abierto a oportunidades en seguridad de la información, GRC y desarrollo seguro.
+            Abierto a oportunidades en seguridad de la información, auditoría de TI, GRC y gobierno de IA.
           </p>
 
           <div className="mt-7 flex flex-wrap items-center justify-center gap-5">
